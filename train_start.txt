@@ -1,0 +1,5 @@
+python train.py --batch 2 --data data/smoke.yaml --cfg models/yolov5l.yaml --weights weights/yolov5l.pt --epochs 50 
+
+python detect.py --source 0 --weights runs/exp2052/weights/best.pt
+
+python detect.py --source C:\Users\jasne\Desktop\testA --output  C:\Users\jasne\Desktop\detect --weights runs/exp2052/weights/best.pt

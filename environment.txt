@@ -1,0 +1,18 @@
+# First -------------------------------------------------
+conda install pytorch=1.6 torchvision cudatoolkit=10.1 -c pytorch
+conda install paddlepaddle-gpu==2.0.0rc0 cudatoolkit=10.1 -c paddle
+
+# pycocotools -----------------------------------------
+pip install cython
+pip install git+https://gitee.com/jiangjiajun/philferriere-cocoapi.git#subdirectory=PythonAPI
+
+# base --------------------------------------------------
+conda install matplotlib=3.3.2 numpy=1.18 opencv=4.1 pillow pyyaml=5.3 tensorboard=2.2 tqdm=4.41
+
+# paddlex ----------------------------------------------
+git clone https://github.com/PaddlePaddle/PaddleX.git
+cd PaddleX
+git checkout develop
+python setup.py install
+
+# DONOT install parl----------------------------------
