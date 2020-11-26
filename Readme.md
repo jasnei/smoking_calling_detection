@@ -15,7 +15,31 @@ cd yolov5_calling_smoking
 python voc_label.py
 ```
 
-#### 4、run train.py
+#### 4 weights
+
+yolov5 weights download here
+
+```
+link: https://pan.baidu.com/s/1QIi0XFE8zBVuuEczHi75ww 
+code: 3131 
+```
+
+```
+unzip and copy to weights (folder)
+```
+
+smoking_calling weights download here
+
+```
+link: https://pan.baidu.com/s/1nSL4V0_nmZCGR7sI7-MUQw 
+code: 3131 
+```
+
+```
+unzip and copy to runs (folder)
+```
+
+#### 5、run train.py
 
 ```
 python train.py --batch 16 --data data/smoke.yaml --cfg models/yolov5l.yaml --weights weights/yolov5l.pt --epochs 100
@@ -28,7 +52,7 @@ Note：
 --epochs 
 ```
 
-#### 5. run detect.py for demo
+#### 6. run detect.py for demo
 
 ```
 python detect.py --source 0 --weights runs/exp2052/weights/best.pt
@@ -38,6 +62,4 @@ Note:
 -- weights load weigths of the model
 -- output  when you pass an output, then all detect images will be save to the output
 ```
-
-
 
